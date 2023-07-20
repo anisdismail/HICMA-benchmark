@@ -1,5 +1,5 @@
 from models import TesseractOCR, KrakenOCR, EasyOCR
-from utils import preprocess_image, load_image, clean_text, generate_statistics, batch_preprocess
+from utils import clean_text
 
 
 def predict(image, ocr_model_name, config):
