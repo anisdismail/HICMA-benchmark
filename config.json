@@ -1,6 +1,27 @@
 {
-    "save_dir": "",
-    "metrics": [],
-    "models": [],
-    "data_dir": ""
+    "general": {
+        "save_dir": "",
+        "metrics": [],
+        "model": "",
+        "data_dir": ""
+    },
+    "image_processing": {
+        "width": null,
+        "height": null,
+        "binarize": true,
+        "grayscale": true
+    },
+    "TesseractOCR": {
+        "tesseract_psm": 13,
+        "tesseract_oem": 1,
+        "trained_model_url": ,
+        "TesseractOCR_path":
+    },
+    "Kraken": {
+        "kraken_url": [],
+        "text_direction": "horizontal-lr"
+    },
+    "EasyOCR": {
+        "detail": 0
+    }
 }

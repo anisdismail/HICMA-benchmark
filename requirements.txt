@@ -1,1 +1,7 @@
 pyArabic
+Levenshtein
+pytesseract
+kraken
+requests
+easyocr
+opencv-python
