@@ -6,8 +6,8 @@
         "data_dir": ""
     },
     "image_processing": {
-        "width": null,
-        "height": null,
+        "image_processing_width": null,
+        "image_processing_height": null,
         "binarize": true,
         "grayscale": true
     },
@@ -22,6 +22,6 @@
         "text_direction": "horizontal-lr"
     },
     "EasyOCR": {
-        "detail": 0
+        "easyocr_detail": 0
     }
 }
