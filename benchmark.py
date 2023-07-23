@@ -78,3 +78,5 @@ for metric in config["metrics"]:
     results_df = batch_evaluate(preds_df=results_df, metric_name=metric)
 
 print(results_df.describe())
+results_df.to_csv(os.path.join(
+    config["save_dir"], f"{config['model']}_results.csv"))
