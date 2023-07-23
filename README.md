@@ -1,18 +1,15 @@
-# HICMA OCR Benchmarking Tool
-
 <!-- PROJECT SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT Liscence][license-shield]][license-url]
+[![CNC Liscence][license-shield]][license-url]
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
- <img src="resources/hicma_benchmark.png" alt="logo" align="center">
-  <h3 align="center"> HICMA OCR Benchmarking Tool</h3>
-
+    <img src="resources/hicma_benchmark.png" alt="logo" style="max-width: 60%;">
+  <h1 align="center"> HICMA OCR Benchmarking Tool</h1>
   <p align="center">
     <br />
     <a href="https://github.com/anisdismail/HICMA-benchmark"><strong>Explore the docs</strong></a>
@@ -218,5 +215,5 @@ The HICMA dataset and its benchmark are publicly available, and is published for
 [stars-url]: https://github.com/anisdismail/HICMA-benchmark/stargazers
 [issues-shield]: https://img.shields.io/github/issues/anisdismail/HICMA-benchmark.svg?style=for-the-badge
 [issues-url]: https://github.com/anisdismail/HICMA-benchmark/issues
-[license-shield]: https://img.shields.io/badge/license-GPL--3.0--only-green?style=for-the-badge
+[license-shield]: https://img.shields.io/badge/license-CC--BY--NC--4.0-green?style=for-the-badge
 [license-url]: https://github.com/anisdismail/HICMA-benchmark/LICENSE
