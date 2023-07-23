@@ -1,5 +1,4 @@
 # HICMA OCR Benchmarking Tool
-Benchmarking Tool for the HICMA Dataset
 
 <!-- PROJECT SHIELDS -->
 [![Contributors][contributors-shield]][contributors-url]
@@ -11,7 +10,7 @@ Benchmarking Tool for the HICMA Dataset
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
- <img src="resources/hicma-benchmark.png" alt="logo" align="center">
+ <img src="resources/hicma_benchmark.png" alt="logo" align="center">
   <h3 align="center"> HICMA OCR Benchmarking Tool</h3>
 
   <p align="center">
