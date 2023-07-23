@@ -1,0 +1,2 @@
+https://raw.githubusercontent.com/tesseract-ocr/tessdata_best/master/ara.traineddata
+https://github.com/ClearCypher/enhancing-tesseract-arabic-text-recognition/raw/main/ara.traineddata

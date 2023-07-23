@@ -1,0 +1,3 @@
+https://zenodo.org/record/7050270/files/all_arabic_scripts.mlmodel
+https://zenodo.org/record/7050296/files/arabic_best.mlmodel
+https://github.com/OpenITI/OCR_GS_Data/blob/master/ara/abhath/arabic_generalized.mlmodel?raw=true
