@@ -1,14 +1,14 @@
 import cv2
 from pyarabic.araby import strip_tashkeel
-
+import swifter
 
 def load_image(image_path):
     return cv2.imread(image_path, cv2.IMREAD_COLOR)
 
 
 def preprocess_image(image, config):
-    if config["width"] and config["height"]:
-        image = cv2.resize(image, (config["width"], config["height"]))
+    if config["image_processing_width"] and config["image_processing_height"]:
+        image = cv2.resize(image, (config["image_processing_width"], config["image_processing_height"]))
     if config["grayscale"]:
         image = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
 
@@ -20,7 +20,7 @@ def preprocess_image(image, config):
 
 def batch_preprocess(df, config):
     images_df = df.copy()
-    images_df["image"] = images_df["img_path"].apply(load_image)
+    images_df["image"] = images_df["img_path"].swifter.apply(load_image)
     images_df["preprocessed_image"] = images_df["image"].apply(
         lambda x: preprocess_image(x, config))
     return images_df

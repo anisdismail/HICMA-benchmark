@@ -1,0 +1,18 @@
+{
+    "general": {
+        "save_dir": "/gdrive/MyDrive/Arabic Calligraphy/HICMA-benchmark" ,
+        "metrics": ["WER","CER","Levenshtein ratio"],
+        "model": "EasyOCR",
+        "data_dir": "/gdrive/MyDrive/Arabic Calligraphy/Full_Dataset"
+    },
+    "image_processing": {
+        "image_processing_width": null,
+        "image_processing_height": null,
+        "binarize": false,
+        "grayscale": false
+    },
+    "EasyOCR": {
+        "easyocr_detail": 0,
+        "easyocr_rotationinfo":[0,90, 180 ,270]
+    }
+}

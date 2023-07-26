@@ -6,3 +6,5 @@ requests
 easyocr
 opencv-python
 pandas
+swifter
+Pillow==9.5.0

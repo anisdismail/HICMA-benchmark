@@ -1,6 +1,6 @@
 from models import TesseractOCR, KrakenOCR, EasyOCR
 from utils import clean_text
-
+import swifter
 
 def predict(image, ocr_model_name, config):
     ocr_models = {
@@ -36,7 +36,7 @@ def batch_predict(images_df, ocr_model_name, config):
     ocr_model = ocr_models[ocr_model_name]
     ocr_model.initialize()
     results_df = images_df.copy()
-    results_df[f"prediction_{ocr_model_name}"] = results_df["preprocessed_image"].apply(
+    results_df[f"prediction_{ocr_model_name}"] = results_df["preprocessed_image"].swifter.apply(
         ocr_model.predict)
     results_df[f"cleaned_prediction_{ocr_model_name}"] = results_df[f"prediction_{ocr_model_name}"].apply(
         clean_text)

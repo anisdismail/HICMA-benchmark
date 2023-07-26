@@ -22,7 +22,6 @@ import Levenshtein
 def cer(gt, ocr_prediction):
     """
     Computes the Character Error Rate, defined as the edit distance.
-    adapted from https://github.com/jitsi/jiwer/issues/7
 
     Arguments:
         gt (string): space-separated ground truth sentence
@@ -41,6 +40,7 @@ def levenshtein_ratio(gt, ocr_prediction):
         ocr_prediction (string): space-separated predicted sentence
     """
     return Levenshtein.ratio(gt, ocr_prediction)
+
 
 
 def wer(gt, ocr_prediction):
@@ -64,3 +64,4 @@ def wer(gt, ocr_prediction):
     w2 = [chr(word2char[w]) for w in ocr_prediction.split()]
 
     return Levenshtein.distance(''.join(w1), ''.join(w2))/float(len(w1))
+

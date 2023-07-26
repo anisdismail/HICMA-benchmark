@@ -1,0 +1,7 @@
+all_arabic_scripts.mlmodel
+arabic_best.mlmodel
+arabic_generalized.mlmodel_raw=true
+easyOCR/*
+Kraken_*/*
+TesseractOCR/*
+TesseractOCR_ClearCypher/*

@@ -2,9 +2,11 @@ import os
 import pytesseract
 import requests
 import kraken
+from kraken import rpred
 from kraken.lib import models
 import easyocr
 import shutil
+from PIL import Image
 
 
 class TesseractOCR:
@@ -29,14 +31,14 @@ class TesseractOCR:
 
         try:
             shutil.move(os.path.join(
-                self.config["save_dir"], local_filename), self.config["TesseractOCR_path"])
+                self.config["save_dir"], local_filename), os.path.join(self.config["TesseractOCR_path"],local_filename))
             print("File moved successfully.")
         except Exception as e:
             print(f"Error occurred while moving the file: {e}")
 
-        self.lang = "ar"
-        self.psm = self.config["psm"]
-        self.oem = self.config["oem"]
+        self.lang = "ara"
+        self.psm = self.config["tesseract_psm"]
+        self.oem = self.config["tesseract_oem"]
 
     def predict(self, image):
         tesseract_config = f"--psm {self.psm} --oem {self.oem}"
@@ -68,9 +70,10 @@ class KrakenOCR:
             self.config["save_dir"], local_filename))
 
     def predict(self, image):
-        seg_box = {'boxes': [[0, 0, image.size[0], image.size[1]]],
+        pil_img=Image.fromarray(image).convert('1')
+        seg_box = {'boxes': [[0, 0, pil_img.size[0], pil_img.size[1]]],
                    'text_direction': self.config["text_direction"]}
-        preds = kraken.rpred.rpred(self.model, image, seg_box)
+        preds = rpred.rpred(self.model, pil_img, seg_box)
         return [pred.prediction for pred in preds]
 
 
@@ -85,5 +88,5 @@ class EasyOCR:
 
     def predict(self, image):
         predicted_text = self.reader.readtext(
-            image, detail=self.config["detail"])
+            image, detail=self.config["easyocr_detail"], rotation_info=self.config["easyocr_rotationinfo"])
         return predicted_text

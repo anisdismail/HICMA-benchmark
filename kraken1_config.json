@@ -1,0 +1,18 @@
+{
+    "general": {
+        "save_dir": "/gdrive/MyDrive/Arabic Calligraphy/HICMA-benchmark" ,
+        "metrics": ["WER","CER","Levenshtein ratio"],
+        "model": "Kraken",
+        "data_dir": "/gdrive/MyDrive/Arabic Calligraphy/Full_Dataset"
+    },
+    "image_processing": {
+        "image_processing_width": 1200,
+        "image_processing_height": 200,
+        "binarize": true,
+        "grayscale": true
+    },
+    "Kraken": {
+        "kraken_url": "https://zenodo.org/record/7050270/files/all_arabic_scripts.mlmodel",
+        "text_direction": "horizontal-lr"
+    }
+}

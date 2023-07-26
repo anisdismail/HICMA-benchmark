@@ -1,0 +1,27 @@
+{
+    "general": {
+        "save_dir": "/gdrive/MyDrive/Arabic Calligraphy/HICMA-benchmark" ,
+        "metrics": ["WER","CER","Levenshtein ratio"],
+        "model": "TesseractOCR",
+        "data_dir": "/gdrive/MyDrive/Arabic Calligraphy/Full_Dataset"
+    },
+    "image_processing": {
+        "image_processing_width": null,
+        "image_processing_height": null,
+        "binarize": true,
+        "grayscale": true
+    },
+    "TesseractOCR": {
+        "tesseract_psm": 13,
+        "tesseract_oem": 1,
+        "trained_model_url": "https://github.com/ClearCypher/enhancing-tesseract-arabic-text-recognition/raw/main/ara.traineddata",
+        "TesseractOCR_path":"/usr/share/tesseract-ocr/4.00/tessdata"
+    },
+    "Kraken": {
+        "kraken_url": [],
+        "text_direction": "horizontal-lr"
+    },
+    "EasyOCR": {
+        "easyocr_detail": 0
+    }
+}
