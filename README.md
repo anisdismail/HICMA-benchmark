@@ -156,7 +156,7 @@ You can modify the experiment parameters in the config.json file:
 python benchmark.py --save_dir save_dir --metrics "CER" "WER" "Levenshtein_ratio" --model "model" --data_dir "" --image_processing_width null --image_processing_height null --binarize true --grayscale true --tesseract_psm 13 --tesseract_oem 1 --trained_model_url "" --TesseractOCR_path "" --kraken_url "" --text_direction "horizontal-lr" --easyocr_detail 0
 
 ```
-Please note that the benchmark tool will **only work with one model at a time**, therefore make sure to choose only one of the following models at a time and add it to the command line arguments. If you provide more than one model in the command, the benchmarking script will only use the first model.
+Please note that you should only specify **one model at a time** in the command line argument. If you provide more than one model in the command, the benchmarking script will only use the first model.
 
 3. You can also check all the possible parameters with their corresponding description using the following command:
 ```sh
@@ -164,7 +164,40 @@ python benchmark.py --help
 ```
 It will generate the following output:
 ```sh
-
+options:
+  --config CONFIG
+    Configurati on file path
+  --save_dir SAVE_DIR
+    Save directory
+  --metrics METRICS [METRICS ...]
+    List of metrics for benchmarking (e.g.,
+    WER, CER, Levenshtein ratio)
+  --model MODEL
+    Model to be evaluated (e.g., Tesseract OCR,
+    KrakenOCR, EasyOCR)
+  --data_dir DATA_DIR
+    Path to the data directory containing the dataset
+  --tesseract_psm TESSERACT_PSM
+    Tesseract OCR page segmentation mode (PSM)
+  --tesseract_oem TESSERACT_OEM
+    Tesseract OCR engine mode (OEM)
+  --trained_model_url TRAINED_MODEL_URL
+    Tesseract OCR trained model url
+  --TesseractOCR_path TESSERACTOCR_PATH
+    Tesseract OCR executable path
+  --kraken_url KRAKEN_URL
+    Kraken OCR trained model url
+  --text_direction TEXT_DIRECTION
+    Text direction for Kraken OCR (e.g. horizontal-lr)
+  --easyocr_detail EASYOCR_DETAIL
+    EasyOCR detail level
+  --image_processing_width IMAGE_PROCESSING_WIDTH
+    Width for image processing
+  --image_processing_height IMAGE_PROCESSING_HEIGHT
+    Height for image processing
+  --binarize Binarize image
+  --grayscale
+    Convert image to grayscale
 ```
 ## Roadmap
 
