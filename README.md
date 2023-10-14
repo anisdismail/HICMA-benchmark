@@ -222,7 +222,7 @@ Contributions are what make the open source community such an amazing place to b
 <!--LICENSE -->
 ## License
 
-The HICMA dataset and its benchmark are publicly available, and is published for research purposes under the Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) licence. See `LICENSE` for more information.
+The HICMA dataset and its benchmark are publicly available, and are published for research purposes under the Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) licence. See `LICENSE` for more information.
 
 
 <!-- CONTACT -->
