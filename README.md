@@ -56,7 +56,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The HICMA Dataset Benchmarking Tool is a powerful utility designed to assess the performance of Optical Character Recognition (OCR) models on a the HICMA Dataset. This tool is intended for researchers, developers, and data scientists working with OCR technologies, providing them with valuable insights into the accuracy and efficiency of their OCR models.
+The HICMA Dataset Benchmarking Tool is a powerful utility designed to assess the performance of Optical Character Recognition (OCR) models on the HICMA Dataset. This tool is intended for researchers, developers, and data scientists working with OCR technologies, providing them with valuable insights into the accuracy and efficiency of their OCR models.
 
 ### Key Features:
 
@@ -228,7 +228,7 @@ The HICMA dataset and its benchmark are publicly available, and are published fo
 <!-- CONTACT -->
 ## Contact
 
-[Anis Ismail](https://linkedin.com/in/anisdimail) - anis[dot]ismail[at]lau[dot]edu
+[Anis Ismail](https://linkedin.com/in/anisdimail)
 
 
 
