@@ -72,6 +72,7 @@ The HICMA Dataset Benchmarking Tool is a powerful utility designed to assess the
 
 - **Reproducibility**: The tool ensures reproducibility by saving evaluation results and summmaries. This allows users to review and share their experiments with others easily.
 
+For more information regarding the dataset and its benchmarking tools, check out the paper accepted in Proceedings of ArabicNLP 2023, colocated with EMNLP 2023, found <a target="_blank" rel="noopener" href="https://aclanthology.org/2023.arabicnlp-1.3/">here</a>.
 
 ### Built With
 
